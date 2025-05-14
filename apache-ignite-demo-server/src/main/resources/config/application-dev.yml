@@ -1,0 +1,8 @@
+# 创建h2连接
+spring:
+  datasource:
+    driver-class-name: org.apache.ignite.jdbc.IgniteJdbcDriver
+    url: jdbc:ignite:thin://127.0.0.1:10800
+    username: sa
+    password:
+

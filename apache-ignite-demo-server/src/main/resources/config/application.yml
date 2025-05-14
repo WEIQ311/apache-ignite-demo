@@ -1,0 +1,5 @@
+# SpringBoot 配置文件
+spring:
+  profiles:
+    active: dev
+    include: common
