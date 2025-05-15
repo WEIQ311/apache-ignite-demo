@@ -3,6 +3,19 @@ spring:
   datasource:
     driver-class-name: org.apache.ignite.jdbc.IgniteJdbcDriver
     url: jdbc:ignite:thin://127.0.0.1:10800
-    username: sa
+    username:
     password:
-
+    type: com.zaxxer.hikari.HikariDataSource
+    hikari:
+      maximum-pool-size: 10
+      minimum-idle: 5
+      idle-timeout: 30000
+      max-lifetime: 1800000
+      connection-timeout: 30000
+      pool-name: igniteHikariPool
+      connection-test-query: SELECT 1
+      validation-timeout: 30000
+      auto-commit: true
+  data:
+    jdbc:
+      dialect: mysql

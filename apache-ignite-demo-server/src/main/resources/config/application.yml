@@ -3,3 +3,5 @@ spring:
   profiles:
     active: dev
     include: common
+  application:
+    name: ignite-demo-server
